@@ -1,13 +1,13 @@
 # Naruth Kongurai
-# Script for reading files and store content + counts words in comments
-#
+# This script prompts the user for a file (csv format) to read in the content and then
+# prints out how many times each word occurs. This tiny script is used as part of my
+# research study for analyzing comments.
 
 import csv
 import string
 from collections import Counter
 
-# Write a python program with (at least) two methods: 
-# (1) a function that reads files and stores the content in some format
+# reads files in a file
 def readStoreFile(fileName):
 
     #fileName = "/Users/emiliagan/Downloads/toyData.csv"
@@ -28,9 +28,7 @@ def readStoreFile(fileName):
 
     return commentsList
 
-
-# (2) a function that then processes the comments and just counts how many times each word occurs. 
-
+# counts how many times each word occurs
 def countWordsInComments(commentsList):
 
     print("(1) Splitting words into its own indices")
@@ -54,11 +52,6 @@ def countWordsInComments(commentsList):
     #outputFile.close()
     return tempDict
 
-
-
-# commentsList = []
-
-# readStoreFile()
 
 fileName = "/Users/emiliagan/Downloads/toyData.csv"
 commentsList = readStoreFile(fileName)
