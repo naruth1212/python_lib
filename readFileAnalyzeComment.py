@@ -53,7 +53,7 @@ def countWordsInComments(commentsList):
     return tempDict
 
 
-fileName = "/Users/emiliagan/Downloads/toyData.csv"
+fileName = "data.csv"
 commentsList = readStoreFile(fileName)
 
 print("\n--------\n")
